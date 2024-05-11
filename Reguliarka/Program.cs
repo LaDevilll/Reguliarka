@@ -16,8 +16,16 @@ namespace Reguliarka
             for (int i = 0; i < input.Length; ++i)
             {
                 Regex regex = new Regex(@"a aaaa ");
-                
-            }
+
+                //следующие строки выведут «ОК»
+                if (r3.IsMatch(str))
+                {
+                    Console.WriteLine("ОК!");
+                }
+                else
+                {
+                    Console.WriteLine("Not ОК ☹");
+                }    
         }
 
     }
